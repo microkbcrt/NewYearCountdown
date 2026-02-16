@@ -1,13 +1,12 @@
-name: RedPacketHunt
-version: 1.21.11
-main: com.example.redpackethunt.RedPacketHunt
+name: NewYearCountdown
+version: ${project.version}
+main: com.example.nyc.NewYearPlugin
 api-version: 1.21
+authors: [YourName]
+description: 适配 Minecraft 1.21.11 的跨年烟花倒计时插件
 commands:
-  rph:
-    description: 全服找红包主命令
-    usage: /rph <start|setspawn|setduration>
-    permission: rph.admin
-permissions:
-  rph.admin:
-    description: 允许管理红包活动
-    default: op
+  ny:
+    description: 跨年倒计时主指令
+    usage: /ny <start|stop>
+    permission: ny.admin
+    permission-message: 你没有权限执行此操作
